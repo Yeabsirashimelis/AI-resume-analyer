@@ -103,14 +103,15 @@ form {
     max-md:flex-col max-md:gap-4 max-md:items-center;
   }
   
-  .resume-card {
-    @apply h-[560px] w-[350px] flex flex-col gap-8 rounded-2xl bg-white p-4
-    lg:w-[430px] xl:w-[490px];
-  }
+.resume-card {
+  @apply h-[560px] flex w-full max-w-full flex-col gap-8 rounded-2xl bg-white p-4 overflow-hidden
+  sm:max-w-[100%] md:max-w-[350px] lg:max-w-[350px] xl:max-w-[350px];
+}
+
   
   .resume-card-header {
     @apply min-h-[110px] flex flex-row items-center justify-between gap-2
-    max-sm:flex-col max-md:justify-center max-md:items-center;
+    max-sm:flex-col max-md:justify-between max-md:items-center;
   }
   
   .feedback-section {
@@ -145,11 +146,11 @@ form {
 }
 
 @utility text-gradient {
-  @  apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#AB8C95] via-[#000000] to-[#8E97C5];
 }
 
 @utility gradient-hover {
-  @  apply bg-gradient-to-b from-light-blue-100 to-light-blue-200;
+  @apply bg-gradient-to-b from-light-blue-100 to-light-blue-200;
 }
 
 @utility primary-gradient {
