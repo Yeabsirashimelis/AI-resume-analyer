@@ -4,7 +4,7 @@ import { usePuterStore } from "~/lib/puter";
 
 export const meta = () => {
   [
-    { title: "Analize-Resume" },
+    { title: "Analize-Resume | Auth" },
     { name: "description", content: "Login into your account" },
   ];
 };
