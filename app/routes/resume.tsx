@@ -24,7 +24,7 @@ export default function Resume() {
     if (!isLoading && !auth.isAuthenticated) {
       navigate(`/auth?next=/resume/${id}`);
     }
-  }, [auth.isAuthenticated]);
+  }, [isLoading]);
 
   useEffect(() => {
     const loadResume = async () => {
